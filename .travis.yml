@@ -1,5 +1,9 @@
-sudo: false
+sudo: required
 language: scala
+
+dist: xenial
+services:
+  - docker
 
 scala:
   - 2.12.8
