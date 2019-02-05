@@ -30,8 +30,8 @@ object Server {
   def routes[F[_]: Sync]: HttpRoutes[F] = {
     val dsl = new Http4sDsl[F]{}; import dsl._
     HttpRoutes.of{
-      case GET -> Root  => Ok("Hello there new2!")
-      case GET -> Root / "hello" / name => Ok(s"Hello $name - new2")
+      case GET -> Root  => Ok("Hello there new3!")
+      case GET -> Root / "hello" / name => Ok(s"Hello $name - new3")
     }
   }
 
