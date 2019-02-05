@@ -19,7 +19,7 @@ cache:
     - $HOME/.sbt
 
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 after_success:
   - docker --version  # document the version travis is using
