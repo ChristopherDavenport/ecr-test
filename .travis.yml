@@ -28,4 +28,4 @@ after_success:
   - sbt docker:publishLocal
   - docker tag ecr-test:latest 779349603032.dkr.ecr.us-east-1.amazonaws.com/ecr-test:latest
   - docker push 779349603032.dkr.ecr.us-east-1.amazonaws.com/ecr-test:latest
-  - aws ecs update-service --cluster fargate --service ecr-test1 --force-new-deployment
+  - aws ecs update-service --cluster fargate --service ecr-test1 --force-new-deployment --region us-east-1
